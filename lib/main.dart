@@ -1,18 +1,30 @@
 void main() {
-  // String name;
-  // print(name);
-  // this cause this error:
-  // Error: Non-nullable variable 'name' must be assigned before it can be used.
-  // To fix this error, you can either initialize the variable with a default value or make it nullable by adding a '?' after the type. For example:
-  String? name;
-  print(name); // This will print 'null' since the variable is now nullable.
-  // print(name.length); This will cause an error (Error: Property 'length' cannot be accessed on 'String?' because it is potentially null.)
-  // To fix this error, you can use '!'
-  // print(name!.length); This will cause a runtime error (Unhandled exception: Null check operator used on a null value) because 'name' is null.
-  // To avoid this error, you can check if 'name' is not null before accessing its properties:
-  if (name != null) {
-    print(name.length);
-  } else {
-    print('name is null');
-  }
+  int a = 5;
+  int b = 10;
+  int sum = a + b;
+  print('The sum of $a and $b is $sum');
+  print('---------------------');
+  int difference = b - a;
+  print('The difference between $b and $a is $difference');
+  print('---------------------');
+  int product = a * b;
+  print('The product of $a and $b is $product');
+  print('---------------------');
+  double quotient = b / a;
+  print('The quotient of $b divided by $a is $quotient');
+  print('---------------------');
+  int modulus = b % a;
+  print('The modulus of $b divided by $a is $modulus');
+  print('---------------------');
+  int incrementA = a + 1;
+  print('The increment of $a is $incrementA');
+  print('---------------------');
+  int decrementB = b - 1;
+  print('The decrement of $b is $decrementB');
+  print('---------------------');
+  int INCREMENT_A = a++;
+  print('The value of a after post-increment is $INCREMENT_A');
+  print('---------------------');
+  int DECREMENT_B = b--;
+  print('The value of b after post-decrement is $DECREMENT_B');
 }
