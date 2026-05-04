@@ -1,30 +1,10 @@
 void main() {
   int a = 5;
   int b = 10;
-  int sum = a + b;
-  print('The sum of $a and $b is $sum');
-  print('---------------------');
-  int difference = b - a;
-  print('The difference between $b and $a is $difference');
-  print('---------------------');
-  int product = a * b;
-  print('The product of $a and $b is $product');
-  print('---------------------');
-  double quotient = b / a;
-  print('The quotient of $b divided by $a is $quotient');
-  print('---------------------');
-  int modulus = b % a;
-  print('The modulus of $b divided by $a is $modulus');
-  print('---------------------');
-  int incrementA = a + 1;
-  print('The increment of $a is $incrementA');
-  print('---------------------');
-  int decrementB = b - 1;
-  print('The decrement of $b is $decrementB');
-  print('---------------------');
-  int INCREMENT_A = a++;
-  print('The value of a after post-increment is $INCREMENT_A');
-  print('---------------------');
-  int DECREMENT_B = b--;
-  print('The value of b after post-decrement is $DECREMENT_B');
+  print(a == b); // false
+  print(a != b); // true
+  print(a > b); // false
+  print(a < b); // true
+  print(a >= b); // false
+  print(a <= b); // true
 }
