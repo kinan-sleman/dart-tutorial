@@ -1,11 +1,23 @@
 void main() {
-  // If Else Statement
-  int number = 10;
-  if (number > 0) {
-    print('The number is positive.');
-  } else if (number < 0) {
-    print('The number is negative.');
-  } else {
-    print('The number is zero.');
+  // Switch Case
+  var grade = 'A';
+  switch (grade) {
+    case 'A':
+      print('Excellent!');
+      break;
+    case 'B':
+      print('Good job!');
+      break;
+    case 'C':
+      print('You can do better.');
+      break;
+    case 'D':
+      print('Needs improvement.');
+      break;
+    case 'F':
+      print('Failing grade.');
+      break;
+    default:
+      print('Invalid grade.');
   }
 }
