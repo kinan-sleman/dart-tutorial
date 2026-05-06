@@ -1,5 +1,5 @@
 void main() {
-  // List 
+  // List
   var list = [1, 2, 3, 4, 5];
   print(list); // Output: [1, 2, 3, 4, 5]
   // String List
@@ -42,5 +42,14 @@ void main() {
   // clear the list
   list.clear();
   print(list); // Output: []
-  
+  // List (Add , AddAll , insert , insertAll)
+  List<num> newList = [1, 2, 3];
+  newList.add(4);
+  print(newList); // Output: [1, 2, 3, 4]
+  newList.addAll([5, 6]);
+  print(newList); // Output: [1, 2, 3, 4, 5, 6]
+  newList.insert(0, 0);
+  print(newList); // Output: [0, 1, 2, 3, 4, 5, 6]
+  newList.insertAll(1, [0.5, 0.75]);
+  print(newList); // Output: [0, 0.5, 0.75, 1, 2, 3, 4, 5, 6]
 }
