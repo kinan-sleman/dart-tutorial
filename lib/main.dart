@@ -1,8 +1,8 @@
 void main() {
-  // While Loop
+  // Do While
   int i = 0;
-  while (i < 5) {
-    print('While Loop: $i');
+  do {
+    print(i);
     i++;
-  }
+  } while (i < 5);
 }
