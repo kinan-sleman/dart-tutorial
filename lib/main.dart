@@ -52,4 +52,16 @@ void main() {
   print(newList); // Output: [0, 1, 2, 3, 4, 5, 6]
   newList.insertAll(1, [0.5, 0.75]);
   print(newList); // Output: [0, 0.5, 0.75, 1, 2, 3, 4, 5, 6]
+  // replaceRange Method
+  newList.replaceRange(1, 3, [0.25, 0.125]);
+  print(newList); // Output: [0, 0.25, 0.125, 1, 2, 3, 4, 5, 6]
+  // remove Method
+  newList.remove(0.25);
+  print(newList); // Output: [0, 0.125, 1, 2, 3, 4, 5, 6]
+  // removeAt Method
+  newList.removeAt(0);
+  print(newList); // Output: [0.125, 1, 2, 3, 4, 5, 6]
+  // removeRange Method
+  newList.removeRange(0, 2);
+  print(newList); // Output: [2, 3, 4, 5, 6]
 }
