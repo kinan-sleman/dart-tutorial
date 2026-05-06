@@ -1,16 +1,11 @@
 void main() {
-  // One Line Comment
-  /*
-   * Multi Line Comment
-   * Another Line
-   * Third Line
-   * Fourth Line
-   * Fifth Line
-   * Sixth Line
-   * Seventh Line
-   * Eighth Line
-   * Ninth Line
-   * Tenth Line
-   * Eleventh Line
-   */  
+  // If Else Statement
+  int number = 10;
+  if (number > 0) {
+    print('The number is positive.');
+  } else if (number < 0) {
+    print('The number is negative.');
+  } else {
+    print('The number is zero.');
+  }
 }
