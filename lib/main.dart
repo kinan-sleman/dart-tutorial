@@ -1,9 +1,9 @@
 void main() {
-  // Break
-  for (int i = 0; i < 10; i++) {
-    if (i == 5) {
-      break; // Exit the loop when i is 5
+  // Continue 
+  for (var i = 0; i < 5; i++) {
+    if (i == 3) {
+      continue; // Skip the rest of the loop when i is 3
     }
-    print(i);
+    print('Iteration: $i');
   }
 }
