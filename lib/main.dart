@@ -1,31 +1,46 @@
 void main() {
-  // String Method 
-  String name = "Flutter is awesome";
-  print(name.length); // Output: 18
-  print(name.toUpperCase()); // Output: FLUTTER IS AWESOME
-  print(name.toLowerCase()); // Output: flutter is awesome
-  String firstName = "John";
-  String lastName = "Doe";
-  String fullName = firstName + " " + lastName;
-  print(fullName); // Output: John Doe
-  // concatenation using interpolation
-  String fullName2 = "$firstName $lastName";
-  print(fullName2); // Output: John Doe
-  // concatenation using interpolation with expression
-  String fullName3 = "${firstName.toUpperCase()} ${lastName.toUpperCase()}";
-  print(fullName3); // Output: JOHN DOE
-  String emptyString = "";
-  print(emptyString.isEmpty); // Output: true
-  print(emptyString.isNotEmpty); // Output: false
-  // Trim method
-  String stringWithSpaces = "   Hello World   ";
-  print(stringWithSpaces.trim()); // Output: Hello World
-  // compareTo method
-  String string1 = "apple";
-  String string2 = "banana";
-  print(string1.compareTo(string2)); // Output: -1 (because "apple" comes before "banana")
-  print(string2.compareTo(string1)); // Output: 1 (because "banana" comes after "apple")
-  // replaceAll method
-  String stringWithSpaces2 = "Hello World";
-  print(stringWithSpaces2.replaceAll(" ", "_")); // Output: Hello_World
+  // List 
+  var list = [1, 2, 3, 4, 5];
+  print(list); // Output: [1, 2, 3, 4, 5]
+  // String List
+  var stringList = ['Hello', 'World'];
+  print(stringList); // Output: [Hello, World]
+  // List with mixed types
+  var mixedList = [1, 'Hello', true];
+  print(mixedList); // Output: [1, Hello, true]
+  // print specific element
+  print(list[0]); // Output: 1
+  print(stringList[1]); // Output: World
+  // Add elements to the list
+  list.add(6);
+  print(list); // Output: [1, 2, 3, 4, 5, 6]
+  // Length of the list
+  print(list.length); // Output: 6
+  // print list with for loop
+  for (var item in list) {
+    print(item);
+  }
+  // print list with forEach
+  stringList.forEach((item) {
+    print(item);
+  });
+  // First element of the list
+  print(list.first); // Output: 1
+  // Last element of the list
+  print(list.last); // Output: 6
+  // isEmpty Method
+  print(list.isEmpty); // Output: false
+  // isNotEmpty Method
+  print(list.isNotEmpty); // Output: true
+  // reverse the list
+  print(list.reversed); // Output: (6, 5, 4, 3, 2, 1)
+  // reverse the list and convert to a new list
+  print(list.reversed.toList()); // Output: [6, 5, 4, 3, 2, 1]
+  // single property
+  var singleList = [42];
+  print(singleList.single); // Output: 42
+  // clear the list
+  list.clear();
+  print(list); // Output: []
+  
 }
