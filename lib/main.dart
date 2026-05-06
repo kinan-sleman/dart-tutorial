@@ -1,23 +1,11 @@
 void main() {
-  // Switch Case
-  var grade = 'A';
-  switch (grade) {
-    case 'A':
-      print('Excellent!');
-      break;
-    case 'B':
-      print('Good job!');
-      break;
-    case 'C':
-      print('You can do better.');
-      break;
-    case 'D':
-      print('Needs improvement.');
-      break;
-    case 'F':
-      print('Failing grade.');
-      break;
-    default:
-      print('Invalid grade.');
+  // Increments For Loop
+  for (int i = 0; i < 5; i++) {
+    print('For Loop: $i');
+  }
+  print('-----------------');
+  // Decrements For Loop
+  for (int i = 5; i > 0; i--) {
+    print('For Loop: $i');
   }
 }
